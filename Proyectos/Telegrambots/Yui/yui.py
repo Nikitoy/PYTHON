@@ -1,5 +1,7 @@
 from config import * #importamos el token del codigo config.py
 import telebot
+import time
+import threading
 
 bot = telebot.TeleBot(mi_token) #creamos la variable bot y dentro usamos el objeto telebot y el metodo telebot de la libreria
                             
@@ -18,16 +20,28 @@ def cmd_start(message):
 
 #dependiendo del contenido a lo que queremos que respondah hara tal accion
 
+
 @bot.message_handler(content_types=["text"])
 def bot_mensajes_texto(message):
     if message.text.startswith("/"):
         bot.send_message(message.chat.id, "este comando no existe")
     elif message.text == "Hola mundo":
-         bot.send_message(message.chat.id, "hello")
+        bot.send_message(message.chat.id, "hello")
+    elif message.text in papa:
+        bot.send_message(message.chat.id, "no te preocupes todo esta bien")
+        archivo = open("help.jpg", "rb")
+        bot.send_photo(message.chat.id, archivo, "Imagen enviada")
+    elif message.text in estadocritico:
+        bot.send_message(message.chat.id, "nivel de estado mental critico, se enviaran recomendaciones")
+    elif message.text in estadoestable:
+        bot.send_message(message.chat.id, "nivel de estado mental estable, dentro de los niveles estandars")
+    elif message.text in estadopositivo:
+        bot.send_message(message.chat.id, "nivel de estado mental positivo, comparte esta felicidad a otros")
     else:
-        bot.send_message(message.chat.id, "Describe exactamente lo que quieres")
-        
-
+        x = bot.send_message(message.chat.id, "<b>Describe exactamente lo que quieres</b>", parse_mode="html")
+        time.sleep(3)
+        bot.edit_message_text("<b>Recuerda que soy un bot con una capacidad limitada</b>", message.chat.id, x.message_id, parse_mode="html")
+  
 
 @bot.message_handler(content_types=["sticker"])
 def bot_sticker(message):
@@ -40,7 +54,25 @@ def bot_photo(message):
 
 
 #main ##########
+#if __name__ == '__main__':
+    #print('iniciando bot')
+    #bot.infinity_polling()  
+    #print('fin')  
+
+def recibir_mensajes():
+    bot.infinity_polling()
+
 if __name__ == '__main__':
-    print('iniciando bot')
-    bot.infinity_polling()  
-    print('fin')  
+    bot.set_my_commands([
+        telebot.types.BotCommand("/start", "da la bienvnida"), 
+        telebot.types.BotCommand("/linkstart", "inicio de session"),
+        telebot.types.BotCommand("/systemcall", "llamada al sistema"),
+    ])
+    print('Starting...')
+    hilo_bot = threading.Thread(name="hilo_bot", target=recibir_mensajes)
+    hilo_bot.start()
+    print('bot iniciado')
+    a = bot.send_message(id_chat, "Hola soy YUI tu asistente de Autoayuda")
+    time.sleep(3)
+    bot.edit_message_text("<b>Del 1 al 10 como describirias tu salud mental</b>", id_chat, a.message_id, parse_mode="html")
+ 
