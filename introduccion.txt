@@ -1,1 +1,42 @@
-Bienvenido a PYTHON
+PYTHON:
+
+Python es un lenguaje de programacion creado por Guido van Rossum, en Holanda en 1991
+
+Lenguaje de alto nivel entendido por los programadores, Sintaxis en ingles.
+
+No hace falta definir el tipo de variables
+
+Open source:
+Es codigo abierto 
+
+Python es un lenguaje de programacion multiparadigma.
+
+es multiplataforma.
+
+es un lenguaje interpretado
+
+usa tipado dinamico
+
+
+
+Multiparadigma:
+
+La Programación Multiparadigma es una práctica que emerge como resultado de la co-existencia de los paradigmas orientado a objetos, procedural, declarativo y funcional buscando mejorar la producción en el desarrollo de proyectos.
+
+Multiplataforma:
+
+Son lenguajes formales diseñados para realizar procesos en cualquier dispositivo sin importar el sistema operativo.
+
+Interpretado:
+
+es decir, que no es necesario compilarlo para ejecutar las aplicaciones escritas en Python, sino que se ejecutan directamente por el ordenador utilizando un programa denominado interpretador, por lo que no es necesario “traducirlo” a lenguaje máquina.
+
+Tipado Dinamico:
+
+Los lenguajes de tipado dinámico son aquellos donde el intérprete asigna a las variables un tipo de variable, durante el tiempo de ejecución basado en su valor en ese momento.
+
+
+QUE SE PUEDE PROGRAMAR CON PYTHON:
+
+Python es un lenguaje de proposito general, casi todo puede programarse con PY:
+aplicaciones de escritorio, aplicaciones web, juegos, aplicaciones a medida, inteligencia artificial, etc.
