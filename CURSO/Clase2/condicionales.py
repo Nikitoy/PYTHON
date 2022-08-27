@@ -17,13 +17,3 @@ if False:
   print("La condición se cumplió")
   
 #En el caso que la condicion fuera false se ejecutaria la condicion de false y imprimiria el dato.
-
-#tambien esta la condicion else
-
-#si if es si, bueno else es encontes xd
-
-if True:
-  print("I am the soloplayer")
-  else:
-    print("me gusta trabajar en equipo")
-    
