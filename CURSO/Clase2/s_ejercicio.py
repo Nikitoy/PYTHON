@@ -4,11 +4,11 @@ edad=60
 
 if edad>=65:
   print("usted tiene 65")
-  elif edad<=55:
-    print("usted tiene 65")
-   else:
-    print("usted tiene 60")
-    
+elif edad<=55:
+  print("usted tiene 65")
+else:
+  print("usted tiene 60")
+   
 #definir genero de un indivudo y una edad usando las condicionales y las sentencias 
 #en el caso de que el genero y la edad no coincidan que usarias?
 
