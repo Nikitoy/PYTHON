@@ -4,6 +4,12 @@ pero 2019 decidio dar un paso al costado, ahora son 5 las personas que se encarg
 los lenguajes de programacion como mencionamos ya, nos permiten dar ordenes a una maquina en un lenguaje entendible por nosotros.
 python se utiliza para la automatizacion generalmente, pero sirve para todo desde para paginas web hasta inteligencia artificial.
 
+desarrollo web
+analisis de datos
+inteligencia artificial
+web scrapping
+DevOps
+
 es un lenguaje open-source, es de código abierto, fácil de aprender y de escribir a nivel sintaxis. Se trata de un lenguaje muy flexible, 
 además de portable y finalmente cuenta con una gran comunidad debido a su adopción.
 
