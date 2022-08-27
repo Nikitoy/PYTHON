@@ -8,3 +8,12 @@ print("¡Hola Mundo!")
 print("¡Hola Mundo!")
 
 #podemos comentar desde linea de texto, variables, metodos etc, y no afectaran al codigo
+
+"""
+Esto es
+un comentario 
+multilínea
+"""
+print("¡Hola Mundo!")
+
+#generalmente usamos las comillas cuando el comentario ocupa mas de una linea
