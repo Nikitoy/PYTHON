@@ -19,3 +19,4 @@ y tiene muchas librerias.
 
 
 Un IDE es un entorno de desarrollo en el cuál podemos escribir y probar el código que escribimos
+integrated development environment.
