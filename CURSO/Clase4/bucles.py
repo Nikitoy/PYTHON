@@ -20,3 +20,35 @@ while i < 6:
 
 #definimos una variable y un bucle que mientras i sea menor a 6 que imprima el valor de i y le sume 1
 #cuando i deje de ser menor a 6 se detendra el bucle
+
+#crear una lista 
+#definir una variable y sumarle 1 hasta que el valor deje de ser menor
+#al numero de elementos de la lista
+
+autos = ["Ford", "Volvo", "BMW"]
+
+i = 0
+while i < len(autos):
+  print(autos[i])
+  i = i + 1
+
+# Ford
+# Volvo
+# BMW
+
+
+#Podemos ingresar un condicional dentro un bucle, es decir, tendríamos una estructura condicional dentro otra.
+
+autos = ["Ford", "Volvo", "BMW"]
+
+i = 0
+while i < len(autos):
+  if(autos[i] != "Volvo"):
+  	print(autos[i])
+  i = i + 1
+
+# Ford
+# BMW
+
+#En el ejemplo anterior, usamos el Operador Condicional != (distinto) para mostrar los autos del array,
+#siempre y cuando el elemento evaluado sea distinto de la cadena de caracteres “Volvo”.
